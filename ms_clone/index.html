@@ -9,33 +9,33 @@
 </head>
 
 <body>
+
 	<div class="container-fluid p-0">
 		<div id="main-container">
-
-			<!-- screen share  -->
-			<div id="screen-share-btn-container" class="col-2 float-right text-right mt-2">
-				<button id="screen-share-btn" type="button" class="btn btn-lg">
-					<i class="fas fa-share-square fa-2x" style="color:rgb(247, 255, 254);"></i>
-				</button>
-			</div>
 
 			<!-- top navbar with mic, cam, exit buttons -->
 			<div id="buttons-container" class="row justify-content-center mt-3">
 				<div class="col-md-2 text-center">
-					<button id="mic-btn" type="button" class="btn btn-block btn-dark btn-lg">
-						<i id="mic-icon" class="fas fa-microphone"></i>
+					<button id="mic-btn" type="button" class="btn btn-block btn-dark btn-lg ">
+						<i id="mic-icon" class="fas fa-microphone fa-2x" style="color:#806B9E;"></i>
 					</button>
 				</div>
 				<div class="col-md-2 text-center">
-					<button id="video-btn" type="button" class="btn btn-block btn-dark btn-lg">
-						<i id="video-icon" class="fas fa-video"></i>
+					<button id="video-btn" type="button" class="btn btn-block btn-dark btn-lg ">
+						<i id="video-icon" class="fas fa-video fa-2x" style=" color:#806B9E;"></i>
 					</button>
 				</div>
 				<div class="col-md-2 text-center">
-					<button id="exit-btn" type="button" class="btn btn-block btn-danger btn-lg">
-						<i id="exit-icon" class="fas fa-phone-slash"></i>
+					<button id="exit-btn" type="button" class="btn btn-block btn-dark btn-lg ">
+						<i id="exit-icon" class="fas fa-phone-slash fa-2x" style="color:#806B9E;"></i>
 					</button>
 				</div>
+				<div id=" screen-share-btn-container" class="col-md-2 text-center">
+					<button id="screen-share-btn" type="button" class="btn btn-block btn-dark btn-lg ">
+						<i class="fas fa-share-square fa-2x" style="color:#806B9E;"></i>
+					</button>
+				</div>
+				<img src="../pix/microsoft_teams.png" id="logo" class="img_pos">
 			</div>
 
 
@@ -69,7 +69,7 @@
 			<div class="modal-content">
 				<div class="modal-header text-center">
 					<h4 class="modal-title w-100 font-weight-bold"
-						style=" color:rgb(182, 22, 231);font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ; font-size:xx-large">
+						style=" color:rgb(132, 7, 170);font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ; font-size:xx-large">
 						Join Channel :)</h4>
 					<button type="button" class="close" data-dismiss="modal">
 						<span>&times;</span>
@@ -125,6 +125,7 @@
 		var uid = parseInt($("#form-uid").val());
 		$("#modalForm").modal("hide");
 		clientInitAndJoin(appId, token, channelName, uid);
+		console.log('heyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy')
 	});
 </script>
 

@@ -43,8 +43,17 @@ client.on('stream-published', function (evt) { //a method in client provided by 
   console.log("Published local stream successfully :)");
 });
 
+// to hide  and display bg image
+function disappear_img() {
+  document.getElementById('logo').style.display = 'none';
+}
+function appear_img() {
+  document.getElementById('logo').style.display = 'block';
+}
+
 // connect remote streams
 client.on('stream-added', function (evt) { //the SDK reports to the app about the existing remote streams i
+  disappear_img();
   var stream = evt.stream;
   var streamId = stream.getId();
   console.log("new stream added: " + streamId);
@@ -84,6 +93,7 @@ client.on('stream-subscribed', function (evt) {  // when a user subscribes to a 
 
 // remove the remote-container when a user leaves the channel
 client.on("peer-leave", function (evt) {
+  appear_img();
   var streamId = evt.stream.getId(); // the the stream id
   if (remoteUsers[streamId] != undefined) {
     remoteUsers[streamId].stop(); // stop playing the feed
