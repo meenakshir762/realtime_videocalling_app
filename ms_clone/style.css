@@ -40,9 +40,11 @@ body {background-color: #806B9E;}
   font-weight:900;
 }
 .modal-dialog{
-  color:rgb(6, 7, 7);
+  color:#8b62c5;
   border:3px solid; 
   border-radius:5%;
+  border-style: double;
+  border-color: #f71cb9;
   
 }
 #buttons-container {
