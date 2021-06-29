@@ -1,0 +1,65 @@
+*{
+    margin: 0px;
+    padding:0px;
+    overflow:hidden;
+    
+}
+body:before, body:after {
+    content: "";
+    position: fixed;
+    background: #806B9E;
+    left: 0;
+    right: 0;
+    height: 10px;
+}
+body:before {
+    top: 0;
+}
+body:after {
+    bottom: 0;
+}
+body {
+    border-left: 10px solid #806B9E;
+    border-right: 10px solid #806B9E;  
+}
+.nav{
+    background-color:#806B9E;
+    position:fixed;
+    right:0;
+    bottom:20%;
+    border-style: dashed;
+
+}
+
+.nav_items li{
+    padding:10px;
+    cursor:grab;
+}
+
+#red{
+    color:red;
+}
+#blue{
+    color:blue;
+}
+#green{
+    color:green;
+}
+#black{
+    color:black;
+}
+#yellow{
+    color:yellow;
+}
+#rubber {
+    color:white;
+}
+#clear{
+    color:white;
+}
+#save{
+    color:white;
+}
+.nav_items li:hover{
+    background-color:#F28398;
+}

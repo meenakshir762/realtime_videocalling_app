@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Board</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/73bfb562fe.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="nav">
+        <ul class="nav_items">
+            <li class="red_pen" id="red" data-toggle="tooltip" title="Red Ink"><i class="fas fa-pen-fancy fa-2x"></i>
+            </li>
+            <li class="blue_pen" id="blue" data-toggle="tooltip" title="Blue Ink"><i class="fas fa-pen-fancy fa-2x"></i>
+            </li>
+            <li class="green_pen" id="green" data-toggle="tooltip" title="Green Ink"><i
+                    class="fas fa-pen-fancy fa-2x"></i></li>
+            <li class="black_pen" id="black" data-toggle="tooltip" title="BlackInk"><i
+                    class="fas fa-pen-fancy fa-2x"></i></li>
+            <li class="highlighter_pen" id="yellow" data-toggle="tooltip" title="Highlighter"><i
+                    class="fas fa-highlighter fa-2x"></i></li>
+            <li class="Eraser" id="rubber" data-toggle="tooltip" title="Eraser"><i class="fas fa-eraser fa-2x"></i></li>
+            <li class="clear" id="clear" data-toggle="tooltip" title="Delete"><i class="fas fa-trash-alt fa-2x"></i>
+            </li>
+            <li class="save" id="save" data-toggle="tooltip" title="Capture"><i class="fas fa-camera-retro fa-2x"></i>
+            </li>
+        </ul>
+    </div>
+    <canvas id="board">
+    </canvas>
+    <script type="text/javascript" src="index.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+</body>
+
+</html>
