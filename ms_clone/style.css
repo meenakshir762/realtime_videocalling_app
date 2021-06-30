@@ -11,6 +11,7 @@ body {background-color: #806B9E;}
 }
 
 
+
 #join-channel .btn btn-default{
   background-color: #806B9E; 
   border: none;
@@ -24,6 +25,13 @@ body {background-color: #806B9E;}
   transition-duration: 0.4s;
   cursor: pointer;
 }
+i {
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid #806B9E;
+  padding: 10px;
+}
+
 
 .btn-default {
   background-color: white; 

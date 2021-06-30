@@ -1,18 +1,10 @@
-/*
- * JS Interface for Agora.io SDK
- */
-//MINCHI STOP
-// video profile settings
-var cameraVideoProfile = '480p_4'; // 640 × 480 @ 30fps  & 750kbs
-var screenVideoProfile = '480p_2'; // 640 × 480 @ 30fps
 
 // create a client  for camera and screen share  seperately
 var client = AgoraRTC.createClient({ mode: 'rtc', codec: 'vp8' });
 var screenClient;
 
-// to keep track of active streams 
+// to keep track of active streams I took 2 instances(remoteUsers,localTracks) 
 var remoteUsers = {}; // On initiation no users are connected.
-
 var localTracks = { //Clear the video and audio tracks used by `client` on initiation.
   camera: {
     id: "",
@@ -23,7 +15,7 @@ var localTracks = { //Clear the video and audio tracks used by `client` on initi
     stream: {}
   }
 };
-
+var screenVideoProfile = '480p_2'; // 640 × 480 @ 30fps
 AgoraRTC.Logger.enableLogUpload(); // enable log upload to Agora’s server
 var masterStreamId; // main stream
 var screenShareActive = false;
@@ -34,7 +26,7 @@ function clientInitAndJoin(appId, token, channel, uid) {
     console.log("client initialized");
     joinChannel(channel, uid, token); // join channel upon successfull init
   }, function (err) {
-    console.log("[ERROR] : client init failed", err);
+    console.log("[ERROR]:client initialization failed", err);
   });
 }
 
@@ -93,7 +85,7 @@ client.on('stream-subscribed', function (evt) {  // when a user subscribes to a 
 
 // remove the remote-container when a user leaves the channel
 client.on("peer-leave", function (evt) {
-  appear_img();
+
   var streamId = evt.stream.getId(); // the the stream id
   if (remoteUsers[streamId] != undefined) {
     remoteUsers[streamId].stop(); // stop playing the feed
@@ -147,7 +139,7 @@ function joinChannel(channel, uid, token) {
   });
 }
 
-// video streams for channel
+// video streaming for local user
 function createCameraStream(uid) {
   var localTrack = AgoraRTC.createStream({
     streamID: uid,
@@ -155,18 +147,15 @@ function createCameraStream(uid) {
     video: true,
     screen: false
   });
-  localTrack.setVideoProfile(cameraVideoProfile);
+  localTrack.setVideoProfile("480p_10"); //640x480
   localTrack.init(function () {
-    console.log("getUserMedia successfully");
-    // TODO: add check for other streams. play local stream full size if alone in channel
+    console.log("Successfully connected to Users media");
     localTrack.play('local-video'); // play the given stream within the local-video div
-
-    // publish local stream
-    client.publish(localTrack, function (err) {
+    client.publish(localTrack, function (err) { // publish local stream
       console.log("[ERROR] : publish local stream error: " + err);
     });
 
-    enableUiControls(localTrack); // move after testing
+    enableAccessToUi(localTrack); // move after testing
     localTracks.camera.stream = localTrack; // keep track of the camera stream for later
   }, function (err) {
     console.log("[ERROR] : getUserMedia failed", err);
@@ -176,11 +165,9 @@ function createCameraStream(uid) {
 // SCREEN SHARING
 function initScreenShare(appId, channel) {
   screenClient = AgoraRTC.createClient({ mode: 'rtc', codec: 'vp8' });
-  console.log("AgoraRTC screenClient initialized");
+  console.log("Screenshare initialized");
   var uid = 49024; // hardcoded uid to make it easier to identify on remote clients
-  screenClient = AgoraRTC.createClient({ mode: 'rtc', codec: 'vp8' });
   screenClient.init(appId, function () {
-    console.log("AgoraRTC screenClient initialized");
   }, function (err) {
     console.log("[ERROR] : AgoraRTC screenClient init failed", err);
   });
@@ -197,7 +184,6 @@ function initScreenShare(appId, channel) {
     mediaSource: 'screen',
   });
   // initialize the stream 
-  // -- NOTE: this must happen directly from user interaction, if called by a promise or callback it will fail.
   screenStream.init(function () {
     console.log("getScreen successful");
     localTracks.screen.stream = screenStream; // keep track of the screen stream
@@ -240,6 +226,7 @@ function initScreenShare(appId, channel) {
 }
 
 function stopScreenShare() {
+
   localTracks.screen.stream.disableVideo(); // disable the local video stream (will send a mute signal)
   localTracks.screen.stream.stop(); // stop playing the local stream
   localTracks.camera.stream.enableVideo(); // enable the camera feed
@@ -314,7 +301,4 @@ function leaveChannel() {
   });
 }
 
-//tokens for added security
-function generateToken() {
-  return null; // TODO: add a token generation
-}
+

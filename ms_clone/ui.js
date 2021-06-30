@@ -1,5 +1,5 @@
 // UI buttons
-function enableUiControls(localTrack) {
+function enableAccessToUi(localTrack) {
 
   $("#mic-btn").prop("disabled", false);
   $("#video-btn").prop("disabled", false);
