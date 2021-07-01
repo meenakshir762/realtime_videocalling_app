@@ -11,7 +11,6 @@
 
 	<div class="container-fluid p-0">
 		<div id="main-container">
-
 			<!-- top navbar with mic, cam, exit,share buttons -->
 			<div id="buttons-container" class="row justify-content-center mt-1">
 
@@ -39,9 +38,7 @@
 						<i class="fas fa-share-square fa-2x" style="color:#806B9E;"></i>
 					</button>
 				</div>
-				<img src="vc_image.png" id="logo" class="img_pos">
 			</div>
-
 
 			<div id="full-screen-video"></div>
 			<!-- auto generating agora fns -->
@@ -67,6 +64,21 @@
 			</div>
 		</div>
 	</div>
+	<!-- UI for Screen Recording  -->
+	<div class="nav">
+		<ul class="nav_items">
+			<li class="startRec" button id="start" data-toggle="tooltip" title="Start Recording"><i
+					class="fas fa-2x fa-record-vinyl"></i>
+			</li>
+			<li class="stopRec" button id="stop" disabled data-toggle="tooltip" title="Stop Recording"><i
+					class="fas fa-2x fa-record-vinyl"></i>
+			</li>
+			<li><a id="downloadButton" data-toggle="tooltip" title="Download"><i class="fas fa-2x fa-download"></i></a>
+			</li>
+		</ul>
+	</div>
+
+	<img src="vc_image.png" style="margin-top: 130px;" id="logo" class="img_pos">
 
 	<div class="modal fade" id="modalForm">
 		<div class="modal-dialog">
@@ -135,7 +147,9 @@
 	});
 </script>
 
+
 <script src="ui.js"></script>
+<script src="recording.js"></script>
 <script src="videocall.js.js"></script>
 <link rel="stylesheet" type="text/css" href="style.css" />
 

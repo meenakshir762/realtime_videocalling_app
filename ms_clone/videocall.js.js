@@ -185,7 +185,7 @@ function initScreenShare(appId, channel) {
   });
   // initialize the stream 
   screenStream.init(function () {
-    console.log("getScreen successful");
+    console.log("successfully got into screen control");
     localTracks.screen.stream = screenStream; // keep track of the screen stream
     screenShareActive = true;
     $("#screen-share-btn").prop("disabled", false); // enable button

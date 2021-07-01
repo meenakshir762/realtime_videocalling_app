@@ -28,42 +28,10 @@ function enableAccessToUi(localTrack) {
 
   $("#exit-btn").click(function () {
     console.log("leave the channel");
+    toggleexitbtn();
     leaveChannel();
   });
 
-  // keyboard listeners 
-  $(document).keypress(function (e) {
-    switch (e.key) {
-      case "m":
-        console.log("squick toggle the mic");
-        toggleMic(localTrack);
-        break;
-      case "v":
-        console.log("quick toggle the video");
-        toggleVideo(localTrack);
-        break;
-      case "s":
-        console.log("initializing screen share");
-        toggleScreenShareBtn(); // set screen share button icon
-        $("#screen-share-btn").prop("disabled", true); // disable the button on click
-        if (screenShareActive) {
-          stopScreenShare();
-        } else {
-          initScreenShare();
-        }
-        break;
-      case "q":
-        console.log("leave the channel");
-        leaveChannel();
-        break;
-      default:  // do nothing
-    }
-
-    // (for testing) 
-    if (e.key === "r") {
-      window.history.back(); // quick reset
-    }
-  });
 }
 
 function toggleBtn(btn) {
@@ -71,14 +39,18 @@ function toggleBtn(btn) {
 }
 
 function toggleScreenShareBtn() {
-  $('#screen-share-btn').toggleClass('btn-danger');
-  $('#screen-share-icon').toggleClass('fa-share-square').toggleClass('fa-times-circle');
+  $('#screen-share-btn').toggleClass('btn-dark').toggleClass('btn-danger');
+}
+
+function toggleexitbtn() {
+  $('#exit-btn').toggleClass('btn-dark').toggleClass('btn-danger');
 }
 
 function toggleVisibility(elementID, visible) {
   if (visible) {
     $(elementID).attr("style", "display:block");
-  } else {
+  }
+  else {
     $(elementID).attr("style", "display:none");
   }
 }

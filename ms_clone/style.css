@@ -1,5 +1,53 @@
 
 body {background-color: #806B9E;}
+*{
+  margin: 0px;
+  padding:0px;
+  overflow:hidden;
+  
+}
+body:before, body:after {
+  content: "";
+  position: fixed;
+  background: #806B9E;
+  left: 0;
+  right: 0;
+  height: 10px;
+}
+body:before {
+  top: 0;
+}
+body:after {
+  bottom: 0
+}
+
+.nav{
+  background-color:#806B9E;
+  position:fixed;
+  right:0;
+  bottom:50%;
+  border-style: dashed;
+
+}
+
+.nav_items li{
+  padding:10px;
+  cursor:pointer;
+}
+
+#start {
+  color: green;
+}
+#stop{
+  color:red;
+}
+#downloadButton{
+  color: #806B9E;
+}
+.nav_items li:hover{
+  background-color:#F28398;
+}
+
 
 .img_pos{
   position: relative;
