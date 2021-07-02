@@ -22,11 +22,11 @@ body:after {
 }
 
 .nav{
-  background-color:#806B9E;
+  background-color:none;
   position:fixed;
   right:0;
   bottom:50%;
-  border-style: dashed;
+  /* border-style: dotted ; */
 
 }
 
