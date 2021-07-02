@@ -1,0 +1,64 @@
+p,
+body,
+td,
+input,
+select,
+button {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 18px;
+}
+h1{
+    font-family: 'Jomhuria', cursive;
+    text-align: center;
+}
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: #806B9E;;
+}
+.calendar_default_corner{
+    display: none;
+    
+}
+a {
+  color: #1155a3;
+}
+
+.space {
+  margin: 10px 0px 10px 0px;
+}
+
+.header {
+  background: #806B9E;
+  background: linear-gradient(to right, #011329 0%, #806B9E 44%, #011329 100%);
+  padding: 20px 10px;
+  color: white;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
+}
+
+.header a {
+  color: #806B9E;
+}
+
+.header h1 a {
+  text-decoration: none;
+}
+
+.header h1 {
+  padding: 0px;
+  margin: 0px;
+}
+
+.main {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.generated {
+  color: #806B9E;;
+  margin-top: 10px;
+}
+
+.generated a {
+  color: #806B9E;;
+}

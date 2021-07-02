@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    color:#806B9E;
+   
+}
+html {
+    height: 100%;
+}
+body {
+    margin: 0px;
+    height: 100%;
+}
+
+h1 {
+    font-family: Comic Sans MS;
+    margin: 0px;
+    text-align: center;
+    color: #806B9E;
+}
+div#change_username, section#input_zone {
+    border: 0px outset #806B9E;
+}
+div#change_username {
+    height: 1%;
+    display: inline-block;
+    background-color: #806B9E;
+}
+section#chatroom {    
+    border: thick double #806B9E;
+    height: 85%;
+    overflow: auto;
+}
+section#input_zone {
+    height: 6%;
+    padding:top 0%;
+    padding-bottom: 2px;
+    text-align: center;
+    background-color: #806B9E;
+}
+i {
+    color:#806B9E;
+    background-color: rgb(245, 245, 245);
+    border-radius: 40%;
+    border: 1px solid #806B9E;
+    padding: 5px;
+  }
+.button {
+    background-color: #008CBA; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 1px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  .button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+  }
+  
+  .button1:hover {
+    background-color: #008CBA;
+    color: white;
+  } 
+.vertical-align {
+    position: relative;
+    top: 20%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+input#username {
+    font-family: Georgia, serif;
+    text-align: justify;
+    letter-spacing: 3px;
+    color:black;
+    font-size:medium;
+}
+input#message {
+    display: inline-block;
+    width: 70%;
+    height: 77%;
+    color:black;
+    font-family:  Georgia, serif;
+    font-size: 2vh;
+}
+
+p.message {
+    margin: 0px;
+    width: 100%;
+    height: 40px;
+    font-size: 2vh;
+    text-align: justify;
+    letter-spacing: 1px;
+    font-family: 'Comfortaa', sans-serif;
+    padding: 1vh;
+}
+.message:nth-child(even) {
+    background-color: #81daf5;
+}
+.message:nth-child(odd) {
+    background-color: #81bef7;
+}

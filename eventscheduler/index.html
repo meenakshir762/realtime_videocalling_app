@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>eventscheduler</title>
+  <link rel="stylesheet" href="style.css">
+   <!-- DayPilot library -->
+  <script src="js/daypilot/daypilot-all.min.js"></script>
+
+</head>
+
+<body>
+  <div class="header">
+    <h1>Event Scheduler</h1>
+  </div>
+
+  <div class="main">
+    <div id="dp"></div>
+    <div class="generated"> </a></div>
+  </div>
+
+  <script>
+    var dp = new DayPilot.Calendar("dp", {
+      viewType: "Days",
+      days: 14,
+      startDate: DayPilot.Date.today().firstDayOfWeek(),
+      cellHeight: 30,
+      showAllDayEvents: true,
+      timeRangeSelectedHandling: "Enabled",
+      onTimeRangeSelected: async (args) => {
+        const modal = await DayPilot.Modal.prompt("Create a new event:", "Event 1");
+        const dp = args.control;
+        dp.clearSelection();
+        if (modal.canceled) { return; }
+        dp.events.add({
+          start: args.start,
+          end: args.end,
+          id: DayPilot.guid(),
+          text: modal.result
+        });
+      },
+      eventDeleteHandling: "Disabled",
+      eventMoveHandling: "Update",
+      onEventMoved: (args) => {
+        args.control.message("Event moved: " + args.e.text());
+      },
+      eventResizeHandling: "Update",
+      onEventResized: (args) => {
+        args.control.message("Event resized: " + args.e.text());
+      },
+      eventClickHandling: "Disabled",
+      eventHoverHandling: "Bubble",
+      bubble: new DayPilot.Bubble({
+        onLoad: (args) => {
+          // if event object doesn't specify "bubbleHtml" property 
+          // this onLoad handler will be called to provide the bubble HTML
+          args.html = "Event details";
+        }
+      }),
+    });
+    dp.events.list = [
+      {
+        id: "1",
+        start: DayPilot.Date.today().addHours(10),
+        end: DayPilot.Date.today().addHours(12),
+        text: "Event 1"
+      }
+    ];
+    dp.init();
+  </script>
+
+</body>
+
+</html>
