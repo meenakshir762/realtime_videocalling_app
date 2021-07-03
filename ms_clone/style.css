@@ -1,15 +1,22 @@
-
-body {background-color: #806B9E;}
+/* linear-gradient(to right, #5f8dc5 0%, #806B9E 44%, #1d3f69 100%); */
+:root {
+	--dark-color-a: linear-gradient(to right, #011329 0%, #806B9E 44%, #011329 100%);
+}
+html,body {
+  /* background-color: #806B9E; */
+  background: var(--dark-color-a);
+}
 *{
   margin: 0px;
   padding:0px;
   overflow:hidden;
   
+  
 }
 body:before, body:after {
   content: "";
   position: fixed;
-  background: #806B9E;
+  background: var(--dark-color-a);
   left: 0;
   right: 0;
   height: 10px;
@@ -25,7 +32,7 @@ body:after {
   background-color:none;
   position:fixed;
   right:0;
-  bottom:50%;
+  bottom:30%;
   /* border-style: dotted ; */
 
 }
@@ -57,8 +64,6 @@ body:after {
   margin-right:auto;
   width:50%
 }
-
-
 
 #join-channel .btn btn-default{
   background-color: #806B9E; 

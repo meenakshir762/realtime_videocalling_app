@@ -1,3 +1,7 @@
+:root {
+	--dark-color-a: linear-gradient(to right, #011329 0%, #806B9E 44%, #0b2a50 100%);
+}
+
 *{
     margin: 0px;
     padding:0px;
@@ -7,7 +11,7 @@
 body:before, body:after {
     content: "";
     position: fixed;
-    background: #806B9E;
+    background: var(--dark-color-a);
     left: 0;
     right: 0;
     height: 10px;
@@ -19,11 +23,12 @@ body:after {
     bottom: 0;
 }
 body {
-    border-left: 10px solid #806B9E;
-    border-right: 10px solid #806B9E;  
+    border-left: 10px var(--dark-color-a);
+    border-right: 10px solid var(--dark-color-a);  
 }
 .nav{
-    background-color:#806B9E;
+    background: var(--dark-color-a);
+    /* background-color:#806B9E; */
     position:fixed;
     right:0;
     bottom:20%;
