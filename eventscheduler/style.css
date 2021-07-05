@@ -29,9 +29,10 @@ a {
 }
 
 .header {
+  padding-left: 150px !important;
   background: #806B9E;
   background: linear-gradient(to right, #011329 0%, #806B9E 44%, #011329 100%);
-  padding: 20px 10px;
+  /* padding: 20px 10px; */
   color: white;
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
 }
@@ -51,7 +52,7 @@ a {
 
 .main {
   padding: 10px;
-  margin-top: 10px;
+  margin-top: 50px;
 }
 
 .generated {

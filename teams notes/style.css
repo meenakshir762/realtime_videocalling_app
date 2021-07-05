@@ -11,9 +11,11 @@ body {
     font-family: "Poppins", sans-serif;
     word-spacing:1px;
     margin: 0;
-    padding-top: 3rem;
+    /* padding-top: 3rem; */
 }
-
+a[href] {
+    text-decoration: none!important;
+  } 
 .add {
     background-color: #806B9E;
     border-radius: 3px;

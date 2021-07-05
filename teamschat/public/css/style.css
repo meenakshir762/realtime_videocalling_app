@@ -14,13 +14,17 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	overflow: hidden;
 }
-
+a[href] {
+    text-decoration: none!important;
+  } 
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	background: var(--light-color);
-	margin: 20px;
+	margin: 1px;
+	
 }
 
 ul {

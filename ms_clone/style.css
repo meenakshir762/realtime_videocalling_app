@@ -2,7 +2,7 @@
 :root {
 	--dark-color-a: linear-gradient(to right, #011329 0%, #806B9E 44%, #011329 100%);
 }
-html,body {
+body {
   /* background-color: #806B9E; */
   background: var(--dark-color-a);
 }
@@ -10,8 +10,15 @@ html,body {
   margin: 0px;
   padding:0px;
   overflow:hidden;
+  box-sizing: border-box;
+  list-style: none;
   
+
   
+}
+a[href] {
+  
+  text-decoration: none;
 }
 body:before, body:after {
   content: "";
@@ -46,7 +53,7 @@ body:after {
   color: green;
 }
 #stop{
-  color:red;
+  color:rgb(136, 14, 14);
 }
 #downloadButton{
   color: #806B9E;
@@ -78,7 +85,7 @@ body:after {
   transition-duration: 0.4s;
   cursor: pointer;
 }
-i {
+button+i {
   background-color: white;
   border-radius: 50%;
   border: 1px solid #806B9E;
@@ -108,8 +115,11 @@ i {
   border-color: #f71cb9;
   
 }
+div #remote-streams-container{
+  padding-left: 12.1%;
+}
 #buttons-container {
-  position: absolute;
+  position: static;
   z-index: 2;  
   width: 100vw;
 }
@@ -118,6 +128,7 @@ i {
   position: absolute;
   width: 100vw;
   height: 100vh;
+  left:11.7%;
 }
 
 #lower-video-bar {
@@ -191,3 +202,4 @@ i {
 #screen-share-btn-container {
   z-index: 99;
 }
+

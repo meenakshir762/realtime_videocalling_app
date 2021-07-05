@@ -8,34 +8,58 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
 		integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
 	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="../../style.css" />
+
 	<title>Teams Group Chat</title>
 </head>
 
 <body>
-	<div class="join-container">
-		<header class="join-header">
-			<h1><i class="fas fa-smile"></i> Teams Group Chat</h1>
-		</header>
-		<main class="join-main">
-			<form action="chat.html">
-				<div class="form-control">
-					<label for="username">Username</label>
-					<input type="text" name="username" id="username" placeholder="Enter username..." required />
-				</div>
-				<div class="form-control">
-					<label for="room">Room</label>
-					<select name="room" id="room">
-						<option value="Web Development">Web Development</option>
-						<option value="Cloud Computing">Cloud Computing</option>
-						<option value="PHP">Machine Learning</option>
-						<option value="Machine Learning">Deep Learning</option>
-						<option value="Cryptography">Cryptography</option>
-						<option value="Extras">Extras</option>
-					</select>
-				</div>
-				<button type="submit" class="btn" style="color:black">Join Chat</button>
-			</form>
-		</main>
+	<div class="wrapper">
+		<div class="sidebar">
+			<h2 style="font-family: 'Bona Nova', serif;">Teams Clone</h2>
+			<ul>
+				<li><a href="../../index.html"><i class="fas fa-home"></i>Home</a></li>
+				<li><a href="../../ms_clone/index.html" target="_blank"><i class="fas fa-video"></i>Video call</a></li>
+				<li class="active"><a href="#"><i class="fas fa-comments"></i>Group chat</a>
+				</li>
+				<li><a href="../../White_Board/index.html"><i class="fas fa-chalkboard-teacher"></i>Smart
+						board</a></li>
+				<li><a href="../../teams notes/index.html"><i class="fas fa-sticky-note"></i>Notes</a>
+				</li>
+				<li><a href="../../to-do-list/index.html"><i class="fas fa-tasks"></i>To-do-list</a>
+				</li>
+				<li><a href="../../eventscheduler/index.html"><i class="fas fa-calendar-alt"></i>Event
+						scheduler</a></li>
+			</ul>
+		</div>
+		<div class="main_content">
+
+			<div class="join-container">
+				<header class="join-header">
+					<h1><i class="fas fa-smile"></i> Teams Group Chat</h1>
+				</header>
+				<main class="join-main">
+					<form action="chat.html">
+						<div class="form-control">
+							<label for="username">Username</label>
+							<input type="text" name="username" id="username" placeholder="Enter username..." required />
+						</div>
+						<div class="form-control">
+							<label for="room">Room</label>
+							<select name="room" id="room">
+								<option value="Web Development">Web Development</option>
+								<option value="Cloud Computing">Cloud Computing</option>
+								<option value="PHP">Machine Learning</option>
+								<option value="Machine Learning">Deep Learning</option>
+								<option value="Cryptography">Cryptography</option>
+								<option value="Extras">Extras</option>
+							</select>
+						</div>
+						<button type="submit" class="btn" style="color:black">Join Chat</button>
+					</form>
+				</main>
+			</div>
+		</div>
 	</div>
 </body>
 

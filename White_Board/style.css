@@ -6,8 +6,12 @@
     margin: 0px;
     padding:0px;
     overflow:hidden;
+    text-decoration: none;
     
 }
+ a[href] {
+    text-decoration: none!important;
+  } 
 body:before, body:after {
     content: "";
     position: fixed;
@@ -22,10 +26,12 @@ body:before {
 body:after {
     bottom: 0;
 }
+
 body {
     border-left: 10px var(--dark-color-a);
     border-right: 10px solid var(--dark-color-a);  
 }
+
 .nav{
     background: var(--dark-color-a);
     /* background-color:#806B9E; */

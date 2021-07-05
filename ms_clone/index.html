@@ -5,68 +5,93 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://kit.fontawesome.com/73bfb562fe.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
+	<div class="wrapper">
+		<div class="sidebar">
+			<h2 style="font-family: 'Bona Nova', serif;">Teams Clone</h2>
+			<ul>
+				<li><a href="../index.html"><i class="fas fa-home"></i>Home</a></li>
+				<li class="active"><a href="#"><i class="fas fa-video"></i>Video call</a></li>
+				<li><a href="../teamschat/public/index.html" target="_blank"><i class="fas fa-comments"></i>Group
+						chat</a></li>
+				<li><a href="../White_Board/index.html" target="_blank"><i class="fas fa-chalkboard-teacher"></i>Smart
+						board</a></li>
+				<li><a href="../teams notes/index.html" target="_blank"><i class="fas fa-sticky-note"></i>Notes</a></li>
+				<li><a href="../to-do-list/index.html" target="_blank"><i class="fas fa-tasks"></i>To-do-list</a></li>
+				<li><a href="../eventscheduler/index.html" target="_blank"><i class="fas fa-calendar-alt"></i>Event
+						scheduler</a></li>
 
-	<div class="container-fluid p-0">
-		<div id="main-container">
-			<!-- top navbar with mic, cam, exit,share buttons -->
-			<div id="buttons-container" class="row justify-content-center mt-1">
+			</ul>
 
-				<div class="col-md-2 text-center">
-					<button id="mic-btn" type="button" data-toggle="tooltip" title="Mic"
-						class="btn btn-block btn-dark btn-lg ">
-						<i id="mic-icon" class="fas fa-microphone fa-2x" style="color:#806B9E;"></i>
-					</button>
-				</div>
-				<div class="col-md-2 text-center">
-					<button id="video-btn" type="button" data-toggle="tooltip" title="Camera"
-						class="btn btn-block btn-dark btn-lg ">
-						<i id="video-icon" class="fas fa-video fa-2x" style=" color:#806B9E;"></i>
-					</button>
-				</div>
-				<div class="col-md-2 text-center">
-					<button id="exit-btn" type="button" data-toggle="tooltip" title="Decline"
-						class="btn btn-block btn-dark btn-lg ">
-						<i id="exit-icon" class="fas fa-phone-slash fa-2x" style="color:#806B9E;"></i>
-					</button>
-				</div>
-				<div id=" screen-share-btn-container" class="col-md-2 text-center">
-					<button id="screen-share-btn" type="button" data-toggle="tooltip" title="Screenshare"
-						class="btn btn-block btn-dark btn-lg ">
-						<i class="fas fa-share-square fa-2x" style="color:#806B9E;"></i>
-					</button>
-				</div>
-			</div>
+		</div>
+		<div class="main_content">
+			<div id="main-container">
 
-			<div id="full-screen-video"></div>
-			<!-- auto generating agora fns -->
 
-			<!-- lower frame where multiple screens can be stacked -->
-			<div id="lower-video-bar" class="row fixed-bottom mb-1">
-				<div id="remote-streams-container" class="container col-9 ml-1">
-					<div id="remote-streams" class="row"></div>
-				</div>
-				<!-- local stream -->
-				<div id="local-stream-container" class="col p-0">
-					<div id="mute-overlay" class="col">
-						<i id="mic-icon" class="fas fa-microphone-slash" style="color:#806B9E;"></i>
+				<!-- lower frame where multiple screens can be stacked -->
+				<div id="lower-video-bar" class="row fixed-bottom mb-0">
+					<div id="remote-streams-container" class="container col-9 ml-1">
+						<div id="remote-streams" class="row"></div>
 					</div>
-					<div id="no-local-video" class="col text-center">
-						<i id="user-icon" class="fas fa-user" style="color:#806B9E;"></i>
+					<!-- local stream -->
+					<div id="local-stream-container" class="col p-0">
+						<div id="mute-overlay" class="col">
+							<i id="mic-icon" class="fas fa-microphone" style="color:#806B9E;"></i>
+						</div>
+						<div id="no-local-video" class="col text-center">
+							<i id="user-icon" class="fas fa-user" style="color:#806B9E;"></i>
+						</div>
+						<div id="local-video" class="col p-0">
+							<!--Agora fns generating -->
+						</div>
 					</div>
-					<div id="local-video" class="col p-0">
-						<!--Agora fns generating -->
-					</div>
-				</div>
 
+				</div>
 			</div>
 		</div>
 	</div>
+
+	<div id="full-screen-video"></div>
+	<!-- auto generating agora fns -->
+
+	<!-- top navbar with mic, cam, exit,share buttons -->
+	<div id="buttons-container" class="row justify-content-center mt-1">
+
+		<div class="col-md-2 text-center">
+			<button id="mic-btn" type="button" data-toggle="tooltip" title="Mic" class="btn btn-block btn-dark btn-lg ">
+				<i id="mic-icon" class="fas fa-microphone fa-2x" style="color:#806B9E;"></i>
+			</button>
+		</div>
+		<div class="col-md-2 text-center">
+			<button id="video-btn" type="button" data-toggle="tooltip" title="Camera"
+				class="btn btn-block btn-dark btn-lg ">
+				<i id="video-icon" class="fas fa-video fa-2x" style=" color:#806B9E;"></i>
+			</button>
+		</div>
+		<div class="col-md-2 text-center">
+			<button id="exit-btn" type="button" data-toggle="tooltip" title="Decline"
+				class="btn btn-block btn-dark btn-lg ">
+				<i id="exit-icon" class="fas fa-phone-slash fa-2x" style="color:#806B9E;"></i>
+			</button>
+		</div>
+		<div id=" screen-share-btn-container" class="col-md-2 text-center">
+			<button id="screen-share-btn" type="button" data-toggle="tooltip" title="Screenshare"
+				class="btn btn-block btn-dark btn-lg ">
+				<i class="fas fa-share-square fa-2x" style="color:#806B9E;"></i>
+			</button>
+		</div>
+	</div>
+
 	<!-- UI for Screen Recording  -->
 	<div class="nav">
 		<ul class="nav_items">
+			<li class="" button id="" data-toggle="tooltip" title="White Board">
+				<a href="../White_Board/index.html" target="_new"><i class="fas fa-2x fa-chalkboard-teacher"></i></a>
+			</li>
+			<!-- <li><a href="./White_Board/index.html"><i class="fas fa-chalkboard-teacher"></i>Smart board</a></li> -->
 			<li class="startRec" button id="start" data-toggle="tooltip" title="Start Recording"><i
 					class="fas fa-2x fa-record-vinyl"></i>
 			</li>
@@ -78,7 +103,7 @@
 		</ul>
 	</div>
 
-	<img src="vc_image.png" style="margin-top: 130px;" id="logo" class="img_pos">
+	<img src="../pix/microsoft_teams.png" style="margin-top: 130px;" id="logo" class="img_pos">
 
 	<div class="modal fade" id="modalForm">
 		<div class="modal-dialog">
