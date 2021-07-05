@@ -1,0 +1,68 @@
+body {
+    background-color:rgb(211, 201, 188);
+        
+}
+.header {
+  background: #806B9E;
+  background: linear-gradient(to right, #011329 0%, #806B9E 44%, #011329 100%);
+  padding: 20px 10px;
+  color: white;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
+}
+a[href] {
+  text-decoration: none!important;
+} 
+h1{
+  font-family: 'Jomhuria', cursive;
+  text-align: center;
+}
+.title-head {
+    color:  #806B9E;
+}
+.font-weight-bold{
+  color: white;
+}
+.desc-head {
+    color:  #806B9E;
+}
+
+.del-head {
+    color:  #806B9E;
+}
+
+hr {
+    border-top: 2px solid  #806B9E;
+}
+p{
+    font: weight 600;
+    font: 1em sans-serif;
+    border-radius: 5px;
+  }
+.row{
+  text-transform: uppercase;
+}
+
+#save .btn btn-success btn-block{
+    background-color: #806B9E; 
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .btn-block {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #806B9E;
+  }
+  
+  .btn-block:hover {
+    background-color: #1aaace;
+    color: white;
+  }
