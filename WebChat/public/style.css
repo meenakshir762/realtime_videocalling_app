@@ -26,8 +26,8 @@ div#change_username {
     background-color: #806B9E;
 }
 section#chatroom {    
-    border: thick double #806B9E;
-    height: 85%;
+    border: 1mm ridge rgba(170, 50, 220, .6);
+    min-height: 85%;
     overflow: auto;
 }
 section#input_zone {
@@ -87,18 +87,19 @@ input#message {
     height: 77%;
     color:black;
     font-family:  Georgia, serif;
-    font-size: 2vh;
+    font-size: 3vh;
 }
 
 p.message {
     margin: 0px;
     width: 100%;
     height: 40px;
-    font-size: 2vh;
+    font-size: 3vh;
     text-align: justify;
     letter-spacing: 1px;
     font-family: 'Comfortaa', sans-serif;
     padding: 1vh;
+    color:black;
 }
 .message:nth-child(even) {
     background-color: #81daf5;

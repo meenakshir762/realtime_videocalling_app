@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://kit.fontawesome.com/73bfb562fe.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="../style.css">
+	<link rel="icon" href="../pix/icon_png.png type=" image/png" />
 </head>
 
 <body>
@@ -13,7 +14,7 @@
 		<div class="sidebar">
 			<h2 style="font-family: 'Bona Nova', serif;">Teams Clone</h2>
 			<ul>
-				<li><a href="../index.html"><i class="fas fa-home"></i>Home</a></li>
+				<li><a href="../index.html" target="_blank"><i class="fas fa-home"></i>Home</a></li>
 				<li class="active"><a href="#"><i class="fas fa-video"></i>Video call</a></li>
 				<li><a href="../teamschat/public/index.html" target="_blank"><i class="fas fa-comments"></i>Group
 						chat</a></li>
@@ -29,8 +30,6 @@
 		</div>
 		<div class="main_content">
 			<div id="main-container">
-
-
 				<!-- lower frame where multiple screens can be stacked -->
 				<div id="lower-video-bar" class="row fixed-bottom mb-0">
 					<div id="remote-streams-container" class="container col-9 ml-1">
@@ -100,10 +99,17 @@
 			</li>
 			<li><a id="downloadButton" data-toggle="tooltip" title="Download"><i class="fas fa-2x fa-download"></i></a>
 			</li>
+			<li><a id="livechat" data-toggle="tooltip" title="LiveChat"><i class="far fa-2x fa-comments"></i></a>
+			</li>
 		</ul>
+		<div>
+			<iframe src="http://localhost:3000/" id="live_chat_frame" name="targetframe" allowTransparency="false"
+				scrolling="yes" frameborder="0" style="display: none;">
+			</iframe>
+		</div>
 	</div>
 
-	<img src="../pix/microsoft_teams.png" style="margin-top: 130px;" id="logo" class="img_pos">
+	<img src="../pix/microsoft_teams.png" id="logo" class="img_pos">
 
 	<div class="modal fade" id="modalForm">
 		<div class="modal-dialog">
@@ -170,6 +176,9 @@
 		clientInitAndJoin(appId, token, channelName, uid);
 
 	});
+	$("#livechat").click(function () {
+		$("#live_chat_frame").toggle();
+	})
 </script>
 
 

@@ -48,7 +48,9 @@ body:after {
   padding:10px;
   cursor:pointer;
 }
-
+#livechat{
+  color:rgb(233, 35, 101);
+}
 #start {
   color: green;
 }
@@ -56,20 +58,22 @@ body:after {
   color:rgb(136, 14, 14);
 }
 #downloadButton{
-  color: #806B9E;
+  color:  rgb(117, 24, 179);
+  
 }
 .nav_items li:hover{
   background-color:#F28398;
 }
 
-
 .img_pos{
   position: relative;
-  top: 20px;
   display:block;
-  margin-left:auto;
-  margin-right:auto;
-  width:50%
+  width:50%;
+  margin:0px; 
+  left:350px; 
+  top:100px;
+  z-index:-5;
+
 }
 
 #join-channel .btn btn-default{

@@ -101,16 +101,14 @@ body {
   .wrapper .main_content .info div{
     margin-bottom: 20px;
   }
- 
-
-  @media (max-height: 500px){
-    .social_media{
-      display: none !important;
-    }
-  }
 
   .active{
     /* background-color:#21b678 ; */
     background: var(--dark-color-a);
     
+  }
+  iframe{
+    height:460px;
+    width:400px;
+    margin-top: 5%;
   }

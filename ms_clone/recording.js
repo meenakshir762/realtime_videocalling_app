@@ -9,7 +9,7 @@ async function startRecording() {
         video: { mediaSource: "screen" }
     });
     // Record the Stream
-    const recorder = new MediaRecorder(stream);
+    recorder = new MediaRecorder(stream);
     const chunks = [];
     //since video stream is quite big we can periodically call ondataavailable
     recorder.ondataavailable = e => chunks.push(e.data);
