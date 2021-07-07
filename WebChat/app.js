@@ -13,14 +13,14 @@ app.get('/', (req, res) => {
     res.render('index')
 })
 
-//Listen on port 3000
-server = app.listen(3000)
+//Listen on port 8080
+server = app.listen(8080)
 
 //socket.io instantiation
 // const io = require('socket.io')(server, {'transports': ['websocket', 'polling']})
 const io = require('socket.io')(server, {
     cors: {
-        origin: "http://localhost:3000",
+        origin: "http://localhost:8080",
         methods: ["GET", "POST"],
         transports: ['websocket', 'polling'],
         credentials: true
