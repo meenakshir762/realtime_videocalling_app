@@ -1,3 +1,3 @@
 # MICROSOFT TEAMS CLONE
 ### [Live Site](https://teams-cloneapp.herokuapp.com/)
-![ Realtime Video Call Feature](https://ibb.co/GCcj0HJ)
+![Video Chat](https://i.ibb.co/7WZRLD1/122.jpg)
