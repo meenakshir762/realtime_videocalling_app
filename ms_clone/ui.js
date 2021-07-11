@@ -20,7 +20,7 @@ function enableAccessToUi(localTrack) {
     if (screenShareActive) {
       stopScreenShare();
     } else {
-      var appId = '306d2eee2d9d4b5fb59c59f860a4c15a';
+      var appId = 'Enter your App ID here';
       var channel = $('#form-channel').val();
       initScreenShare(appId, channel);
     }
