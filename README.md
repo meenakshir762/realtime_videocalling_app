@@ -52,12 +52,18 @@ npm install
 
 - Java Script ES5 or higher.
 - Nodejs 14 or higher
+- A web server that supports SSL (https)
 - A [Agora App ID](https://docs.agora.io/en/Agora%20Platform/channel_key?platform=Android#step-1-get-an-app-id).
 - x86_64/arm64 platform and Unix system (use WSL for Windows).
 
 ### Video Demo
 
 https://youtu.be/313251DBt1o
+
+### References
+* https://docs.agora.io/en/Video/start_call_web_ng?platform=Web
+* https://github.com/AgoraIO/Basic-Video-Call/tree/master/Group-Video/OpenVideoCall-Web
+* https://www.daypilot.org/
 
 
 
