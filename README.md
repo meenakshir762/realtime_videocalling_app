@@ -3,7 +3,7 @@
 This is a clone of Microsoft Teams made with simple UI and functionalties built in JavaScript and Nodejs using Agora SDK.
 
 ## 🧐 Feature list
--   [x] One to one video cal
+-   [x] One to one video call
 -   [x] Group video call
 -   [x] Toggling of audio and video stream
 -   [x] Screen Sharing
