@@ -54,7 +54,7 @@ npm install
 - Nodejs 14 or higher
 - A web server that supports SSL (https)
 - A [Agora App ID](https://docs.agora.io/en/Agora%20Platform/channel_key?platform=Android#step-1-get-an-app-id).
-- x86_64/arm64 platform and Unix system (use WSL for Windows).
+- x86_64/arm64 platform and Unix system.
 
 ### Video Demo
 
