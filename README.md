@@ -2,7 +2,7 @@
 ### [Live Site](https://teams-cloneapp.herokuapp.com/)
 This is a clone of Microsoft Teams made with simple UI and functionalties developed using Java Script and Nodejs.
 This web app offers various features including
-
+## 🧐 Feature list
 1. One to one video call
 2. Group video call
 3. Live chat
@@ -24,18 +24,15 @@ This web app offers various features including
 * [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
 
 <!-- GETTING STARTED -->
-## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
 
 #### Requirements
-* Python 3.6+
+* Visula Studio Code
 
 * Xcode (macOS)
 
 * Visual Studio 2017+ with C++ (Windows)
-  ```
+
 
 ### Installation
 
