@@ -42,21 +42,6 @@ cd realtime_videocalling_app
 ```bash
 npm install
 ```
-4. Change the working directory
-```bash
-cd client
-```
-5. Install dependencies
-```bash
-yarn install
-```
-6. Run the app
-```bash
-npm start in parent directory /realtime_videocalling_app
-```
-```bash
-yarn start in directory /realtime_videocalling_app/teamschat/..
-```
 
 🌟 You are all set!
 
