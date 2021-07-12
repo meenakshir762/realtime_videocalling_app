@@ -69,7 +69,7 @@ https://youtu.be/313251DBt1o
 
 ### Author😎
 
-[MEENAKSHI R](www.linkedin.com/in/meenakshi1762)
+[MEENAKSHI R](https://www.linkedin.com/in/meenakshi1762/)
 
 
 
