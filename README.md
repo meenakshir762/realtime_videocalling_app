@@ -14,4 +14,13 @@ This web app offers various features including
 
 ![Video Chat](https://i.ibb.co/nwHKSzM/home.jpg)
 
+### Built With
+
+* [JavaScript](https://www.javascript.com/)
+* [Nodejs](https://nodejs.org/)
+* [Jquery](https://jquery.com)
+* [Bootstrap](https://getbootstrap.com)
+* [HTML](https://html.com/)
+* [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
+
 
