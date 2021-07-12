@@ -24,33 +24,42 @@ This web app offers various features including
 * [HTML](https://html.com/)
 * [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
 
-<!-- GETTING STARTED -->
+## 🚀 Getting started
 
+This project is deployed at https://cuckooapp.herokuapp.com
 
-#### Requirements
-* Visula Studio Code
+Guide for local deployment -
 
-* Xcode (macOS)
+1. Clone the repository
+```bash
+git clone https://github.com/somikdatta/cuckoo.git
+```
+2. Change the working directory
+```bash
+cd cuckoo
+```
+3. Install dependencies
+```bash
+npm install
+```
+4. Change the working directory
+```bash
+cd client
+```
+5. Install dependencies
+```bash
+yarn install
+```
+6. Run the app
+```bash
+npm start in parent directory /cuckoo
+```
+```bash
+yarn start in directory /cuckoo/client
+```
+7. Open project at http://localhost:3000
 
-* Visual Studio 2017+ with C++ (Windows)
-
-
-### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```JS
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
+🌟 You are all set!
 
 
 <!-- USAGE EXAMPLES -->
