@@ -1,7 +1,7 @@
 # MICROSOFT TEAMS CLONE
 ### [Live Site](https://teams-cloneapp.herokuapp.com/)
 This is a clone of Microsoft Teams made with simple UI and functionalties developed using Java Script and Nodejs.
-This web app offers various features including
+
 ## 🧐 Feature list
 -   [x] One to one video cal
 -   [x] Group video call
