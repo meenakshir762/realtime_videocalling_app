@@ -1,5 +1,6 @@
 # MICROSOFT TEAMS CLONE
 ### [Live Site](https://teams-cloneapp.herokuapp.com/)
+This 
 Microsoft Teams Clone is a simple one-to-one video call app  built in python using Agora SDK. 
 Two people can connect in a channel using the App-id from agora.io. Live chat is incorporated using PubNub. An additional screen recording feature is also availabe.
 
