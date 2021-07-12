@@ -56,7 +56,8 @@ npm install
 - x86_64/arm64 platform and Unix system (use WSL for Windows).
 
 ### Video Demo
--https://youtu.be/313251DBt1o
+
+-(https://youtu.be/313251DBt1o)
 
 
 
