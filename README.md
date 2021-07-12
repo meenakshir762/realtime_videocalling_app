@@ -21,6 +21,7 @@ This is a clone of Microsoft Teams made with simple UI and functionalties develo
 
 * [JavaScript](https://www.javascript.com/)
 * [Nodejs](https://nodejs.org/)
+* [Socket.io](https://socket.io/)
 * [Jquery](https://jquery.com)
 * [Bootstrap](https://getbootstrap.com)
 * [HTML](https://html.com/)
