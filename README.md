@@ -1,5 +1,5 @@
 # MICROSOFT TEAMS CLONE
 ### [Live Site](https://teams-cloneapp.herokuapp.com/)
-![Video Chat]((https://user-images.githubusercontent.com/63337063/125341927-d2a88080-e371-11eb-9914-b96124cfeda8.jpeg))
+![Video Chat] <img width="502" alt="aa spr2" src="https://user-images.githubusercontent.com/57580997/125255633-44081500-e319-11eb-8b7b-1e2713c5c1bd.png">
 
 
