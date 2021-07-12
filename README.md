@@ -1,6 +1,14 @@
 # MICROSOFT TEAMS CLONE
 ### [Live Site](https://teams-cloneapp.herokuapp.com/)
-This 
+This is a clone of Microsoft Teams made with simple UI and functionalties developed using Java Script and Nodej.
+This web app offers various features like
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
 Microsoft Teams Clone is a simple one-to-one video call app  built in python using Agora SDK. 
 Two people can connect in a channel using the App-id from agora.io. Live chat is incorporated using PubNub. An additional screen recording feature is also availabe.
 
