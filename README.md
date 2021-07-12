@@ -32,7 +32,7 @@ Guide for local deployment -
 
 1. Clone the repository
 ```bash
-git clone https://github.com/somikdatta/cuckoo.git
+git clone https://github.com/meenakshir762/realtime_videocalling_app.git
 ```
 2. Change the working directory
 ```bash
@@ -52,10 +52,10 @@ yarn install
 ```
 6. Run the app
 ```bash
-npm start in parent directory /cuckoo
+npm start in parent directory /realtime_videocalling_app
 ```
 ```bash
-yarn start in directory /cuckoo/client
+yarn start in directory /realtime_videocalling_app/client
 ```
 7. Open project at http://localhost:3000
 
