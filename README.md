@@ -5,7 +5,9 @@ This web app offers various features including
 ## 🧐 Feature list
 -   [x] One to one video cal
 -   [x] Group video call
+-   [x] Toggling of audio and video stream
 -   [x] Screen Sharing
+-   [x] Screen Recording
 -   [x] Single use disposable chat rooms
 -   [x] Group chat
 -   [x] Smart Board
