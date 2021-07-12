@@ -26,7 +26,7 @@ This web app offers various features including
 
 ## 🚀 Getting started
 
-This project is deployed at https://cuckooapp.herokuapp.com
+This project is deployed at https://teams-cloneapp.herokuapp.com/
 
 Guide for local deployment -
 
