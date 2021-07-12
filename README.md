@@ -48,6 +48,13 @@ npm install
 
 🌟 You are all set!
 
+### Requirements
+
+- Java Script ES5 or higher.
+- Nodejs 14 or higher
+- A [Agora App ID](https://docs.agora.io/en/Agora%20Platform/channel_key?platform=Android#step-1-get-an-app-id).
+- x86_64/arm64 platform and Unix system (use WSL for Windows).
+
 
 
 
