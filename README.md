@@ -64,11 +64,12 @@ https://youtu.be/313251DBt1o
 * https://docs.agora.io/en/Video/start_call_web_ng?platform=Web
 * https://github.com/AgoraIO/Basic-Video-Call/tree/master/Group-Video/OpenVideoCall-Web
 * https://www.daypilot.org/
+* https://developer.mozilla.org/en-US/
 
 
 ### Author😎
 
-MEENAKSHI R
+[MEENAKSHI R](www.linkedin.com/in/meenakshi1762)
 
 
 
