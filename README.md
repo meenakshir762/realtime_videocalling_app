@@ -11,6 +11,15 @@ This web app offers various features including
 6. Notes
 7. To-do-list
 8. Event Scheduler
+-   [x] One to one video cal
+-   [x] Group video call
+-   [x] Screen Sharing
+-   [x] Live chat
+-   [x] Group chat
+-   [x] Smart Board
+-   [x] Notes
+-   [x] To-do-list
+-   [x] Event Scheduler
 
 ![Video Chat](https://i.ibb.co/nwHKSzM/home.jpg)
 
