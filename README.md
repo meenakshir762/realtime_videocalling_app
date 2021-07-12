@@ -57,7 +57,7 @@ npm install
 
 ### Video Demo
 
--(https://youtu.be/313251DBt1o)
+https://youtu.be/313251DBt1o
 
 
 
