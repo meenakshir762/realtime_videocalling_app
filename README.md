@@ -36,7 +36,7 @@ git clone https://github.com/meenakshir762/realtime_videocalling_app.git
 ```
 2. Change the working directory
 ```bash
-cd cuckoo
+cd realtime_videocalling_app
 ```
 3. Install dependencies
 ```bash
@@ -55,9 +55,8 @@ yarn install
 npm start in parent directory /realtime_videocalling_app
 ```
 ```bash
-yarn start in directory /realtime_videocalling_app/client
+yarn start in directory /realtime_videocalling_app/teamschat/..
 ```
-7. Open project at http://localhost:3000
 
 🌟 You are all set!
 
